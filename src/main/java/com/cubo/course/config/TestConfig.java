@@ -1,11 +1,7 @@
 package com.cubo.course.config;
 
-import java.util.Arrays;
-
 import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -13,9 +9,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-
-import com.cubo.course.entities.User;
-import com.cubo.course.repositories.UserRepository;
 
 @Configuration
 @Profile("test")
@@ -43,8 +36,5 @@ public class TestConfig  {
 		return adapter;
 		
 	}
-	
 
-	
-	
 }
